@@ -3,6 +3,11 @@ window.handlerVotar = function () {
     let email = document.getElementById("email")
     let btn = document.getElementById("btnenviar")
 
+    if (email.value.toString() === '' || name.value.toString() === '') {
+      alert("Ingresar datos")
+      return
+    }
+
     if ( localStorage.getItem('votos') ) {
         let existe = `${localStorage.getItem('votos')}`.includes(email.value.toString())
         if (existe) {
@@ -10,7 +15,7 @@ window.handlerVotar = function () {
             btn.classList.add('hide')
             return
         }else {
-            localStorage.setItem('votos', email.getAttribute('value') + '|' + email.value.toString())
+            localStorage.setItem('votos', `${localStorage.getItem('votos')}` + '|' + email.value.toString())
         }
     } else {
         // nuevo
