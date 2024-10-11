@@ -1,3 +1,30 @@
+body {
+  background-color: #f4f4f4;
+}
+
+.header,
+.body,
+.footer {
+  width: auto;
+  display: flex;
+  padding: 2rem;
+}
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 5px 10px 0px rgba(219, 219, 219, 1);
+}
+
+.header img {
+  width: 15vw;
+}
+
+.title {
+  display: flex;
+  gap: 1rem;
+}
+
 .hide {
     visibility: hidden !important;
 }
