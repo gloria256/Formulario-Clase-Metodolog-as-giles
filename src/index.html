@@ -10,6 +10,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <script src="main.js"></script>
+    <link href="styles/style.css" />
   </head>
   <body>
     <h1>Hello, world!</h1>
@@ -18,5 +20,12 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <div class="contenedor-voto">
+      <div>
+        <input id="nombre" type="text" placeholder="Nombre" />
+        <input id="email" type="email" placeholder="Email" />
+        <button id="btnenviar" onclick="handlerVotar()">Enviar</button>
+      </div>
+    </div>
   </body>
 </html>
